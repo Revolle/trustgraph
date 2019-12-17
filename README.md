@@ -19,3 +19,5 @@ Calculate a trust between members of a graph
 * Each contact C of graph G can :
   * create a token T , with a log L, sent to one of the contacts Ci part of Ld(C)
   * receive a token Th (sent by Lh(C) ), anotates it with a log L, and  sent to one of the contacts Ci part of Ld(C)
+## test
+* evaluate_graph.py : Contribution from Vincent Yernaux. This python-script creates/display a complete graph (nodes, notes, edges oriented/valued between nodes). It makes a calculation of the trust for each node. It shows that the calculation can be stable after few iterations (with a correct function ftr) . This scripts needs to know the whole graph. To be done : for each node C - which knows only his contacts Ld(c) - , C should be able to discover by himself the whole graph (sending a token ?), calculate it like proposed in the script, and verify its result against Ld(C) (sending a token ?)
