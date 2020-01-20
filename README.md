@@ -7,7 +7,7 @@ Estimate an evaluation of trust, for any contacts in a non centralized network.
 * a member must be able to estimate the evaluation of all members (contacts of contacts, recursively).
 ## methodology
 * When a member receives a token, he :
-  * adds a triplet to the token : (member_id evaluation contact_id)
+  * adds a triplet to the token : member_id , evaluation , contact_id
   * sends the token updated to the contact
   * estimates evaluation of members, using the tokens already received
   * detects potential frauds, using the tokens already received
